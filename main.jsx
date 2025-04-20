@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { io } from 'socket.io-client';
 
-const socket = io("http://localhost:3001"); // Cambiar a Railway URL en producción
+const socket = io("https://spyfallbros-backend.onrender.com");
+ // Cambiar a Railway URL en producción
 
 function App() {
   const [codigoSala, setCodigoSala] = useState('');
